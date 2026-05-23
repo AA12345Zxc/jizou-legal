@@ -41,8 +41,17 @@
 <h3>2.2 ログインした場合に収集される情報</h3>
 <ul>
 <li>Googleアカウントのメールアドレス・表示名</li>
+<li>Apple ID（Sign in with Apple利用時）</li>
 <li>アカウントID</li>
 </ul>
+<h3>2.3 広告関連で収集される情報</h3>
+<ul>
+<li>広告ID（iOSのIDFA、AndroidのAAID）</li>
+<li>IPアドレス</li>
+<li>デバイス情報、位置情報の概算（広告配信のため）</li>
+<li>広告との操作情報（表示・クリックなど）</li>
+</ul>
+<p>これらは広告SDKによって自動的に収集されます。</p>
 </div>
 
 <div class="section">
@@ -51,19 +60,40 @@
 <li>アプリの機能提供・改善</li>
 <li>修行データのバックアップ・復元</li>
 <li>クラッシュ・不具合の修正</li>
+<li>関連性の高い広告の配信と効果測定</li>
 </ul>
 </div>
 
 <div class="section">
-<h2>4. 第三者への情報提供</h2>
+<h2>4. 広告について</h2>
+<h3>4.1 広告の表示</h3>
+<p>本アプリはGoogle AdMobを利用して広告を表示しています。</p>
+<h3>4.2 iOSでの追跡許可（ATT）</h3>
+<p>iOSでは初回起動時に「追跡の許可」を求めるダイアログが表示されます。</p>
+<ul>
+<li>「許可」した場合：パーソナライズされた広告が表示されます</li>
+<li>「許可しない」場合：非パーソナライズ広告が表示されます（広告自体は表示されます）</li>
+</ul>
+<h3>4.3 広告IDのリセット</h3>
+<p>ユーザーは端末の設定からいつでも広告IDをリセット・削除できます。</p>
+<ul>
+<li>iOS：設定 → プライバシーとセキュリティ → トラッキング</li>
+<li>Android：設定 → Google → 広告</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>5. 第三者への情報提供</h2>
 <p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーをご確認ください。</p>
 <ul>
 <li>Google Firebase（データ保存・認証）：<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+<li>Google AdMob（広告配信）：<a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+<li>Apple Sign in with Apple（iOS認証）：<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
 </ul>
 </div>
 
 <div class="section">
-<h2>5. データの保存・管理</h2>
+<h2>6. データの保存・管理</h2>
 <ul>
 <li>修行データはFirebase（Googleのサーバー）に保存されます</li>
 <li>ゲストモードの場合はデバイス内にのみ保存されます</li>
@@ -72,22 +102,27 @@
 </div>
 
 <div class="section">
-<h2>6. データの削除</h2>
-<p>設定画面の「データリセット」からいつでもデータを削除できます。アカウントの削除をご希望の場合は下記お問い合わせ先までご連絡ください。</p>
+<h2>7. SNS共有機能</h2>
+<p>本アプリには修行記録をSNSで共有する機能があります。共有内容はユーザーが選択した時のみ送信され、自動送信されることはありません。共有先のSNSプラットフォームのプライバシーポリシーが適用されます。</p>
 </div>
 
 <div class="section">
-<h2>7. 子どものプライバシー</h2>
+<h2>8. データの削除</h2>
+<p>設定画面の「データリセット」からいつでもデータを削除できます。アカウントの削除は設定画面の「アカウントを削除」から実行可能です。</p>
+</div>
+
+<div class="section">
+<h2>9. 子どものプライバシー</h2>
 <p>本アプリは13歳未満のお子様を対象としていません。13歳未満の方の個人情報を意図的に収集することはありません。</p>
 </div>
 
 <div class="section">
-<h2>8. プライバシーポリシーの変更</h2>
+<h2>10. プライバシーポリシーの変更</h2>
 <p>本ポリシーは予告なく変更される場合があります。重要な変更がある場合はアプリ内でお知らせします。</p>
 </div>
 
 <div class="section">
-<h2>9. お問い合わせ</h2>
+<h2>11. お問い合わせ</h2>
 <p>プライバシーに関するご質問・ご要望は以下までご連絡ください。<br>
 メール：jizou.app@gmail.com</p>
 </div>
@@ -99,7 +134,7 @@
 
 <div class="section">
 <h2>1. Introduction</h2>
-<p>This Privacy Policy explains how Jizou (the 'App') handles your information. By using the App, you agree to this policy.</p>
+<p>This Privacy Policy explains how Jizou (the "App") handles your information. By using the App, you agree to this policy.</p>
 </div>
 
 <div class="section">
@@ -113,8 +148,17 @@
 <h3>2.2 When You Sign In</h3>
 <ul>
 <li>Email address and display name from your Google account</li>
+<li>Apple ID (when using Sign in with Apple)</li>
 <li>Account ID</li>
 </ul>
+<h3>2.3 Advertising-Related Information</h3>
+<ul>
+<li>Advertising ID (IDFA on iOS, AAID on Android)</li>
+<li>IP address</li>
+<li>Device information, approximate location (for ad delivery)</li>
+<li>Ad interaction data (impressions, clicks)</li>
+</ul>
+<p>These are collected automatically by the ad SDK.</p>
 </div>
 
 <div class="section">
@@ -123,19 +167,40 @@
 <li>To provide and improve app functionality</li>
 <li>To backup and restore your practice data</li>
 <li>To fix bugs and crashes</li>
+<li>To deliver relevant ads and measure their effectiveness</li>
 </ul>
 </div>
 
 <div class="section">
-<h2>4. Third-Party Services</h2>
+<h2>4. About Advertising</h2>
+<h3>4.1 Ad Display</h3>
+<p>This App uses Google AdMob to display ads.</p>
+<h3>4.2 App Tracking Transparency (ATT) on iOS</h3>
+<p>On iOS, you will see a "Tracking Permission" dialog on first launch.</p>
+<ul>
+<li>If you "Allow": Personalized ads will be shown</li>
+<li>If you "Don't Allow": Non-personalized ads will be shown (ads are still displayed)</li>
+</ul>
+<h3>4.3 Resetting Advertising ID</h3>
+<p>You can reset or delete your advertising ID anytime in device settings:</p>
+<ul>
+<li>iOS: Settings → Privacy & Security → Tracking</li>
+<li>Android: Settings → Google → Ads</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>5. Third-Party Services</h2>
 <p>The App uses the following third-party services. Please review their privacy policies:</p>
 <ul>
 <li>Google Firebase (data storage & auth): <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+<li>Google AdMob (ad delivery): <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+<li>Apple Sign in with Apple (iOS authentication): <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
 </ul>
 </div>
 
 <div class="section">
-<h2>5. Data Storage</h2>
+<h2>6. Data Storage</h2>
 <ul>
 <li>Practice data is stored on Firebase (Google servers)</li>
 <li>Guest mode data is stored locally on your device only</li>
@@ -144,22 +209,27 @@
 </div>
 
 <div class="section">
-<h2>6. Data Deletion</h2>
-<p>You can delete your data anytime via 'Reset Data' in Settings. To delete your account, please contact us at the address below.</p>
+<h2>7. SNS Sharing</h2>
+<p>The App has a feature to share practice records on SNS. Content is only sent when explicitly selected by the user; no automatic sending occurs. The privacy policy of the SNS platform you share to applies.</p>
 </div>
 
 <div class="section">
-<h2>7. Children's Privacy</h2>
+<h2>8. Data Deletion</h2>
+<p>You can delete your data anytime via "Reset Data" in Settings. You can delete your account via "Delete Account" in Settings.</p>
+</div>
+
+<div class="section">
+<h2>9. Children's Privacy</h2>
 <p>The App is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
 </div>
 
 <div class="section">
-<h2>8. Changes to This Policy</h2>
+<h2>10. Changes to This Policy</h2>
 <p>We may update this policy without prior notice. We will notify you of significant changes within the App.</p>
 </div>
 
 <div class="section">
-<h2>9. Contact Us</h2>
+<h2>11. Contact Us</h2>
 <p>For privacy-related questions, please contact:<br>
 Email: jizou.app@gmail.com</p>
 </div>
